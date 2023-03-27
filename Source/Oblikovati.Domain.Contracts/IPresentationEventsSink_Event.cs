@@ -1,0 +1,23 @@
+﻿using Oblikovati.Domain.Contracts.Delegates;
+
+namespace Oblikovati.Domain.Contracts;
+
+public interface IPresentationEventsSink_Event
+{
+    void add_OnNewPublicationMarkedView(PresentationEventsSink_OnNewPublicationMarkedViewEventHandler handler);
+    void remove_OnNewPublicationMarkedView(PresentationEventsSink_OnNewPublicationMarkedViewEventHandler handler);
+    void add_OnDelete(PresentationEventsSink_OnDeleteEventHandler handler);
+    void remove_OnDelete(PresentationEventsSink_OnDeleteEventHandler handler);
+    void add_OnStoryboardChange(PresentationEventsSink_OnStoryboardChangeEventHandler handler);
+    void remove_OnStoryboardChange(PresentationEventsSink_OnStoryboardChangeEventHandler handler);
+    void add_OnPublicationDesignViewChange(PresentationEventsSink_OnPublicationDesignViewChangeEventHandler handler);
+    void remove_OnPublicationDesignViewChange(PresentationEventsSink_OnPublicationDesignViewChangeEventHandler handler);
+    void add_OnPublicationComponentChange(PresentationEventsSink_OnPublicationComponentChangeEventHandler handler);
+    void remove_OnPublicationComponentChange(PresentationEventsSink_OnPublicationComponentChangeEventHandler handler);
+    void add_OnNewPublication(PresentationEventsSink_OnNewPublicationEventHandler handler);
+    void remove_OnNewPublication(PresentationEventsSink_OnNewPublicationEventHandler handler);
+    void add_OnPublicationModelingDataUpdate(PresentationEventsSink_OnPublicationModelingDataUpdateEventHandler handler);
+    void remove_OnPublicationModelingDataUpdate(PresentationEventsSink_OnPublicationModelingDataUpdateEventHandler handler);
+    void add_OnPublicationNameChange(PresentationEventsSink_OnPublicationNameChangeEventHandler handler);
+    void remove_OnPublicationNameChange(PresentationEventsSink_OnPublicationNameChangeEventHandler handler);
+}

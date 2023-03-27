@@ -1,0 +1,35 @@
+﻿using Oblikovati.Domain.Contracts.Enums;
+
+namespace Oblikovati.Domain.Contracts;
+
+public interface IImportedDWGComponent
+{
+
+    IComponentDefinition Parent { get; }
+    bool LinkedToFile { get; }
+    IDocumentDescriptor ReferencedDocumentDescriptor { get; }
+    IAttributeSets AttributeSets { get; }
+    HealthStatusEnum HealthStatus { get; }
+    string Name { get; }
+    bool IsEmbedded { get; }
+    IReferencedFileDescriptor ReferencedFile { get; }
+    IImportedComponentDefinition Definition { get; set; }
+    bool SuppressLinkToFile { get; set; }
+    IDWGBlockDefinition ModelSpaceDefinition { get; }
+    IBox2d Crop { get; set; }
+    bool Visible { get; set; }
+    IImportedDWGLayersEnumerator Layers { get; }
+    bool Grounded { get; set; }
+    object XYPlane { get; }
+    object XZPlane { get; }
+    object YZPlane { get; }
+    object XAxis { get; }
+    object YAxis { get; }
+    object ZAxis { get; }
+    object Origin { get; }
+    IBox RangeBox { get; }
+    void BreakLinkToFile();
+    void GetReferenceKey(ref List<byte> ReferenceKey, int KeyContext);
+    void Delete();
+    void SetEndOfPart(bool Before);
+}
