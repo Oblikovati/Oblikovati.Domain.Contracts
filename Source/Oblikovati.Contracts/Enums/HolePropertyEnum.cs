@@ -1,0 +1,31 @@
+﻿namespace Oblikovati.Contracts.Enums;
+
+public enum HolePropertyEnum
+{
+    kCBoreDepthHoleProperty,
+    kCBoreDiameterHoleProperty,
+    kCSinkAngleHoleProperty,
+    kCSinkDepthHoleProperty,
+    kCSinkDiameterHoleProperty,
+    kCustomDesignationHoleProperty,
+    kDescriptionHoleProperty,
+    kFasternerFitHoleProperty,
+    kFasternerSizeHoleProperty,
+    kFastenerTypeHoleProperty,
+    kHoleHoleProperty,
+    kHoleDepthHoleProperty,
+    kHoleDiameterHoleProperty,
+    kPunchAngleHoleProperty,
+    kPunchDepthHoleProperty,
+    kPunchDirectionHoleProperty,
+    kPunchIdHoleProperty,
+    kQuantityHoleProperty,
+    kTapDrillDiameterHoleProperty,
+    kThreadClassHoleProperty,
+    kThreadDepthHoleProperty,
+    kThreadDesignationHoleProperty,
+    kThreadPitchHoleProperty,
+    kXDIMHoleProperty,
+    kYDIMHoleProperty,
+    kCustomHoleProperty,
+}
