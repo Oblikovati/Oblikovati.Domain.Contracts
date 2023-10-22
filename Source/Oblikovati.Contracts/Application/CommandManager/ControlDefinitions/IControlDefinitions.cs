@@ -4,7 +4,6 @@ namespace Oblikovati.Contracts.Application.CommandManager.ControlDefinitions;
 
 public interface IControlDefinitions : IList<IControlDefinition>
 {
-    public IControlDefinition this[string Index] { get; }
     bool UseDefaultMultiCharAliases { get; set; }
 
     IButtonDefinition AddButtonDefinition(string DisplayName, string InternalName, CommandTypesEnum Classification,

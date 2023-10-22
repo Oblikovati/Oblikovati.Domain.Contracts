@@ -19,7 +19,7 @@ namespace Oblikovati.Contracts.Application.Documents.PresentationDocument;
 
 public interface IPresentationDocument
 {
-    DocumentTypeEnum DocumentType { get; }
+    DocumentType DocumentType { get; }
     string DisplayName { get; set; }
     bool DisplayNameOverridden { get; set; }
     IFile File { get; }
@@ -35,7 +35,7 @@ public interface IPresentationDocument
     bool Dirty { get; set; }
     bool Compacted { get; }
     IDocumentEvents DocumentEvents { get; }
-    CommandIDEnum _DefaultCommand { get; }
+    CommandType _DefaultCommand { get; }
     string DefaultCommand { get; }
     IReferencedOLEFileDescriptors ReferencedOLEFileDescriptors { get; }
     IObjectsEnumerator ReferencedOLEFileDescriptors2 { get; }

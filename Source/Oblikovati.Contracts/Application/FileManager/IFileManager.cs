@@ -19,7 +19,7 @@ public interface IFileManager : IInjectableSingletonEntity
     /// <param name="DraftingStandard">Input constant that specifies the drafting standard to use in the drawing being created.</param>
     /// <param name="DocumentSubType">Input constant (GUID) that specifies the subtype of the document to be created (sheet metal or weldment).</param>
     /// <returns></returns>
-    string GetTemplateFile(DocumentTypeEnum DocumentType, SystemOfMeasureEnum SystemOfMeasure,
+    string GetTemplateFile(DocumentType DocumentType, SystemOfMeasureEnum SystemOfMeasure,
         DraftingStandardEnum DraftingStandard, object DocumentSubType);
 
     void GetIdentifierFromFileName(string FullFileName, ref List<byte> Identifier, string AbsolutePath);

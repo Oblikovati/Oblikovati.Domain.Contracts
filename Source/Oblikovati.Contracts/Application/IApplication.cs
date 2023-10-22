@@ -71,7 +71,7 @@ public interface IApplication : IApplicationBase, IInjectableSingletonEntity
     bool _LibraryDocumentModifiable { get; set; }
     IDocument ActiveDocument { get; }
     IDocument ActiveEditDocument { get; }
-    DocumentTypeEnum ActiveDocumentType { get; }
+    DocumentType ActiveDocumentType { get; }
     IView ActiveView { get; }
     IViewsEnumerator Views { get; }
     string Caption { get; set; }
@@ -130,7 +130,7 @@ public interface IApplication : IApplicationBase, IInjectableSingletonEntity
     void UseAutoCADRelatedSettings();
     void UseOblikovatiSettings();
 
-    string GetTemplateFile(DocumentTypeEnum DocumentType, SystemOfMeasureEnum SystemOfMeasure,
+    string GetTemplateFile(DocumentType DocumentType, SystemOfMeasureEnum SystemOfMeasure,
         DraftingStandardEnum DraftingStandard, object DocumentSubType);
 
     void _ConstructInternalNameAndFileVersion(string Name, string Number, string Custom, string Revision,

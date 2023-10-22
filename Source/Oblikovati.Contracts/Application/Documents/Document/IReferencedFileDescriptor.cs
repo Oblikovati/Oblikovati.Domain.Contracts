@@ -4,7 +4,7 @@ namespace Oblikovati.Contracts.Application.Documents.Document;
 
 public interface IReferencedFileDescriptor
 {
-    DocumentTypeEnum DocumentType { get; }
+    DocumentType DocumentType { get; }
     string DisplayName { get; }
     string FullFileName { get; }
     int FileSaveCounter { get; }

@@ -9,7 +9,7 @@ public interface IDocumentDescriptor
     string FullDocumentName { get; }
     LevelOfDetailEnum ReferencedLevelOfDetail { get; }
     object ReferencedDocument { get; }
-    DocumentTypeEnum ReferencedDocumentType { get; }
+    DocumentType ReferencedDocumentType { get; }
     IFileDescriptor ReferencedFileDescriptor { get; }
     bool ReferenceMissing { get; }
     bool ReferenceReplaced { get; }

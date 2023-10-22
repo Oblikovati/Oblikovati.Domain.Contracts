@@ -2,7 +2,7 @@
 
 public enum ShortcutTypeEnum
 {
-    kNoShortcut,
-    kAliasShortcut,
-    kAcceleratorShortcut,
+    NoShortcut,
+    AliasShortcut,
+    AcceleratorShortcut,
 }

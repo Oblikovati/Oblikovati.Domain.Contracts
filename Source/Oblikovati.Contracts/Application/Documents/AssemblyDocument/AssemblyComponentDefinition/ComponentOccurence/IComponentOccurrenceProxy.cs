@@ -21,7 +21,7 @@ public interface IComponentOccurrenceProxy
     string Name { get; set; }
     IComponentDefinition ContextDefinition { get; }
     IComponentDefinition Definition { get; }
-    DocumentTypeEnum DefinitionDocumentType { get; }
+    DocumentType DefinitionDocumentType { get; }
     IComponentOccurrence ParentOccurrence { get; }
     IComponentOccurrencesEnumerator OccurrencePath { get; }
     IComponentOccurrencesEnumerator SubOccurrences { get; }

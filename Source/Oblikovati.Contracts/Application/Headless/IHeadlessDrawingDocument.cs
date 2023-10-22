@@ -12,7 +12,7 @@ namespace Oblikovati.Contracts.Application.Headless;
 
 public interface IHeadlessDrawingDocument
 {
-    DocumentTypeEnum DocumentType { get; }
+    DocumentType DocumentType { get; }
     IComponentDefinitions ComponentDefinitions { get; }
     IComponentDefinition ComponentDefinition { get; }
     string FullFileName { get; }

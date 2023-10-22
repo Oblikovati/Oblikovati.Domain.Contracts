@@ -105,7 +105,7 @@ public interface IOblikovatiServerObject
     ICustomDataEvents _CustomDataEvents { get; }
     bool _LibraryDocumentModifiable { get; set; }
 
-    string GetTemplateFile(DocumentTypeEnum DocumentType, SystemOfMeasureEnum SystemOfMeasure,
+    string GetTemplateFile(DocumentType DocumentType, SystemOfMeasureEnum SystemOfMeasure,
         DraftingStandardEnum DraftingStandard, object DocumentSubType);
 
     void _ConstructInternalNameAndFileVersion(string Name, string Number, string Custom, string Revision,

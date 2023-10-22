@@ -27,5 +27,5 @@ public interface IControlDefinition
     void Delete();
     void AutoAddToGUI();
     void Execute();
-    void Execute2(bool Synchronous);
+    void Execute(bool Synchronous);
 }

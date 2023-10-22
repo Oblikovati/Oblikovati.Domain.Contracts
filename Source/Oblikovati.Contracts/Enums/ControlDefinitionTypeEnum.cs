@@ -2,7 +2,7 @@
 
 public enum ControlDefinitionTypeEnum
 {
-    kButtonDefinition,
-    kComboBoxDefinition,
-    kMacroControlDefinition,
+    ButtonDefinition,
+    ComboBoxDefinition,
+    MacroControlDefinition,
 }

@@ -11,7 +11,7 @@ namespace Oblikovati.Contracts.Application.Headless;
 
 public interface IHeadlessDocument
 {
-    DocumentTypeEnum DocumentType { get; }
+    DocumentType DocumentType { get; }
     IComponentDefinitions ComponentDefinitions { get; }
     IComponentDefinition ComponentDefinition { get; }
     string FullFileName { get; }

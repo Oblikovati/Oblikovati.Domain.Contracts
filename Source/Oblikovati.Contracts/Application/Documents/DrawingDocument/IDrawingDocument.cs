@@ -21,7 +21,7 @@ namespace Oblikovati.Contracts.Application.Documents.DrawingDocument;
 
 public interface IDrawingDocument
 {
-    DocumentTypeEnum DocumentType { get; }
+    DocumentType DocumentType { get; }
     string DisplayName { get; set; }
     bool DisplayNameOverridden { get; set; }
     IFile File { get; }
@@ -37,7 +37,7 @@ public interface IDrawingDocument
     bool Dirty { get; set; }
     bool Compacted { get; }
     IDocumentEvents DocumentEvents { get; }
-    CommandIDEnum _DefaultCommand { get; }
+    CommandType _DefaultCommand { get; }
     string DefaultCommand { get; }
     IReferencedOLEFileDescriptors ReferencedOLEFileDescriptors { get; }
     IObjectsEnumerator ReferencedOLEFileDescriptors2 { get; }

@@ -13,8 +13,7 @@ namespace Oblikovati.Contracts.Application.Documents.Document;
 
 public interface IDocument
 {
-    IApplicationBase Parent { get; }
-    DocumentTypeEnum DocumentType { get; }
+    DocumentType DocumentType { get; }
     string DisplayName { get; set; }
     bool DisplayNameOverridden { get; set; }
     IFile File { get; }

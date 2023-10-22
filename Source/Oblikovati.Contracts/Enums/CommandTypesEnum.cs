@@ -2,14 +2,14 @@
 
 public enum CommandTypesEnum
 {
-    kShapeEditCmdType,
-    kQueryOnlyCmdType,
-    kFileOperationsCmdType,
-    kFilePropertyEditCmdType,
-    kUpdateWithReferencesCmdType,
-    kNonShapeEditCmdType,
-    kReferencesChangeCmdType,
-    kEditMaskCmdType,
-    kSchemaChangeCmdType,
-    kModelStateUpdatesCmdType,
+    ShapeEditCmdType,
+    QueryOnlyCmdType,
+    FileOperationsCmdType,
+    FilePropertyEditCmdType,
+    UpdateWithReferencesCmdType,
+    NonShapeEditCmdType,
+    ReferencesChangeCmdType,
+    EditMaskCmdType,
+    SchemaChangeCmdType,
+    ModelStateUpdatesCmdType,
 }

@@ -150,7 +150,7 @@ public interface IFileUIEvents
 
     public struct OnFileNewEventArgs
     {
-        public DocumentTypeEnum DocumentType;
+        public DocumentType DocumentType;
         public string TemplateFileName;
         public INameValueMap Context;
     }
