@@ -5,6 +5,6 @@ namespace Oblikovati.Contracts;
 
 public interface IPublicationEventsSink
 {
-    void OnModelingDataUpdate(IPresentationDocument Document, IPublication Publication, EventTimingEnum BeforeOrAfter,
+    void OnModelingDataUpdate(IPresentationDocument Document, IPublication Publication, EventTiming BeforeOrAfter,
         out HandlingCodeEnum HandlingCode);
 }

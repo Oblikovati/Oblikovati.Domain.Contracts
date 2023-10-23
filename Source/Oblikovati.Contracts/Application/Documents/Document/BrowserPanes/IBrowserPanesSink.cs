@@ -10,13 +10,13 @@ public interface IBrowserPanesSink
     void OnBrowserNodeGetDisplayObjects(object BrowserNodeDefinition, out IObjectCollection Objects,
         INameValueMap Context, out HandlingCodeEnum HandlingCode);
 
-    void OnBrowserNodeLabelEdit(object BrowserNodeDefinition, string NewLabel, EventTimingEnum BeforeOrAfter,
+    void OnBrowserNodeLabelEdit(object BrowserNodeDefinition, string NewLabel, EventTiming BeforeOrAfter,
         INameValueMap Context, out HandlingCodeEnum HandlingCode);
 
-    void OnBrowserNodeDeleteEntry(object BrowserNodeDefinition, EventTimingEnum BeforeOrAfter, INameValueMap Context,
+    void OnBrowserNodeDeleteEntry(object BrowserNodeDefinition, EventTiming BeforeOrAfter, INameValueMap Context,
         out HandlingCodeEnum HandlingCode);
 
     void OnBrowserNodesReorder(IBrowserPane BrowserPane, IBrowserNodesEnumerator DragNodes, IBrowserNode TargetNode,
-        InsertionLocationTypeEnum eInsertionLoactionType, EventTimingEnum BeforeOrAfter, INameValueMap Context,
+        InsertionLocationTypeEnum eInsertionLoactionType, EventTiming BeforeOrAfter, INameValueMap Context,
         out HandlingCodeEnum HandlingCode);
 }

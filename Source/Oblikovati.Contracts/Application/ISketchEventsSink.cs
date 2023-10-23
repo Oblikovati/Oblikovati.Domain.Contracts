@@ -8,21 +8,21 @@ namespace Oblikovati.Contracts.Application;
 
 public interface ISketchEventsSink
 {
-    void OnNewSketch(IDocument Document, ISketch Sketch, EventTimingEnum BeforeOrAfter, INameValueMap Context,
+    void OnNewSketch(IDocument Document, ISketch Sketch, EventTiming BeforeOrAfter, INameValueMap Context,
         out HandlingCodeEnum HandlingCode);
 
-    void OnSketchChange(IDocument Document, ISketch Sketch, EventTimingEnum BeforeOrAfter, INameValueMap Context,
+    void OnSketchChange(IDocument Document, ISketch Sketch, EventTiming BeforeOrAfter, INameValueMap Context,
         out HandlingCodeEnum HandlingCode);
 
-    void OnNewSketch3D(IDocument Document, ISketch3D Sketch3D, EventTimingEnum BeforeOrAfter, INameValueMap Context,
+    void OnNewSketch3D(IDocument Document, ISketch3D Sketch3D, EventTiming BeforeOrAfter, INameValueMap Context,
         out HandlingCodeEnum HandlingCode);
 
-    void OnSketch3DChange(IDocument Document, ISketch3D Sketch3D, EventTimingEnum BeforeOrAfter, INameValueMap Context,
+    void OnSketch3DChange(IDocument Document, ISketch3D Sketch3D, EventTiming BeforeOrAfter, INameValueMap Context,
         out HandlingCodeEnum HandlingCode);
 
-    void OnSketch3DSolve(IDocument Document, object Sketch, EventTimingEnum BeforeOrAfter, INameValueMap Context,
+    void OnSketch3DSolve(IDocument Document, object Sketch, EventTiming BeforeOrAfter, INameValueMap Context,
         out HandlingCodeEnum HandlingCode);
 
-    void OnDelete(IDocument Document, object Entity, EventTimingEnum BeforeOrAfter, INameValueMap Context,
+    void OnDelete(IDocument Document, object Entity, EventTiming BeforeOrAfter, INameValueMap Context,
         out HandlingCodeEnum HandlingCode);
 }

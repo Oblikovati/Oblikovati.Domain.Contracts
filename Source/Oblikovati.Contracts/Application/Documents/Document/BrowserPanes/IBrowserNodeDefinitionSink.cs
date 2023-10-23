@@ -5,6 +5,6 @@ namespace Oblikovati.Contracts.Application.Documents.Document.BrowserPanes;
 
 public interface IBrowserNodeDefinitionSink
 {
-    void OnLabelEdit(string NewLabel, EventTimingEnum BeforeOrAfter, INameValueMap Context,
+    void OnLabelEdit(string NewLabel, EventTiming BeforeOrAfter, INameValueMap Context,
         out HandlingCodeEnum HandlingCode);
 }

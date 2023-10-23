@@ -8,6 +8,6 @@ public interface IClientBrowserNodeDefinitionSink
     void OnActivate(INameValueMap Context);
     void OnGetDisplayObjects(out IObjectCollection Objects, INameValueMap Context);
 
-    void OnLabelEdit(string NewLabel, EventTimingEnum BeforeOrAfter, INameValueMap Context,
+    void OnLabelEdit(string NewLabel, EventTiming BeforeOrAfter, INameValueMap Context,
         out HandlingCodeEnum HandlingCode);
 }

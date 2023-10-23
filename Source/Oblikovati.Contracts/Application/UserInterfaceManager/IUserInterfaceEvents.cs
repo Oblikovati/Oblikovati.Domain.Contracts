@@ -37,7 +37,7 @@ public interface IUserInterfaceEvents : IInjectableSingletonEntity
     {
         public IEnvironment Environment;
         public EnvironmentStateEnum EnvironmentState;
-        public EventTimingEnum BeforeOrAfter;
+        public EventTiming BeforeOrAfter;
         public INameValueMap Context;
     }
 

@@ -5,6 +5,6 @@ namespace Oblikovati.Contracts.Application.CommandManager.ControlDefinitions;
 
 public interface IControlDefinitionEventsSink
 {
-    void OnCommandInputs(EventTimingEnum BeforeOrAfter, INameValueMap Context, out INameValueMap Inputs,
+    void OnCommandInputs(EventTiming BeforeOrAfter, INameValueMap Context, out INameValueMap Inputs,
         out HandlingCodeEnum HandlingCode);
 }

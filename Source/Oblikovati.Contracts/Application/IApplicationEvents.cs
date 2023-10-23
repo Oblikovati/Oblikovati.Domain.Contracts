@@ -11,7 +11,7 @@ public interface IApplicationEvents : IInjectableSingletonEntity
     struct OnNewDocumentEventArgs
     {
         public IDocument Document;
-        public EventTimingEnum BeforeOrAfter;
+        public EventTiming BeforeOrAfter;
         public INameValueMap Context;
     }
 
@@ -24,7 +24,7 @@ public interface IApplicationEvents : IInjectableSingletonEntity
     {
         public IDocument Document;
         public string FullDocumentName;
-        public EventTimingEnum BeforeOrAfter;
+        public EventTiming BeforeOrAfter;
         public INameValueMap Context;
     }
 
@@ -39,7 +39,7 @@ public interface IApplicationEvents : IInjectableSingletonEntity
     {
         public IDocument Document;
         public string FullDocumentName;
-        public EventTimingEnum BeforeOrAfter;
+        public EventTiming BeforeOrAfter;
         public INameValueMap Context;
     }
 
@@ -51,7 +51,7 @@ public interface IApplicationEvents : IInjectableSingletonEntity
     struct OnSaveDocumentEventArgs
     {
         public IDocument Document;
-        public EventTimingEnum BeforeOrAfter;
+        public EventTiming BeforeOrAfter;
         public INameValueMap Context;
     }
 
@@ -64,7 +64,7 @@ public interface IApplicationEvents : IInjectableSingletonEntity
     {
         public IDocument Document;
         public string FullDocumentName;
-        public EventTimingEnum BeforeOrAfter;
+        public EventTiming BeforeOrAfter;
         public INameValueMap Context;
     }
 
@@ -77,7 +77,7 @@ public interface IApplicationEvents : IInjectableSingletonEntity
     {
         public IDocument Document;
         public string FullDocumentName;
-        public EventTimingEnum BeforeOrAfter;
+        public EventTiming BeforeOrAfter;
         public INameValueMap Context;
     }
 
@@ -91,7 +91,7 @@ public interface IApplicationEvents : IInjectableSingletonEntity
     struct OnActivateDocumentEventArgs
     {
         public IDocument Document;
-        public EventTimingEnum BeforeOrAfter;
+        public EventTiming BeforeOrAfter;
         public INameValueMap Context;
     }
 
@@ -103,7 +103,7 @@ public interface IApplicationEvents : IInjectableSingletonEntity
     struct OnDeactivateDocumentEventArgs
     {
         public IDocument Document;
-        public EventTimingEnum BeforeOrAfter;
+        public EventTiming BeforeOrAfter;
         public INameValueMap Context;
     }
 
@@ -115,7 +115,7 @@ public interface IApplicationEvents : IInjectableSingletonEntity
     struct OnNewViewEventArgs
     {
         public IView View;
-        public EventTimingEnum BeforeOrAfter;
+        public EventTiming BeforeOrAfter;
         public INameValueMap Context;
     }
 
@@ -128,7 +128,7 @@ public interface IApplicationEvents : IInjectableSingletonEntity
     struct OnDisplayModeChangeEventArgs
     {
         public IView View;
-        public EventTimingEnum BeforeOrAfter;
+        public EventTiming BeforeOrAfter;
         public INameValueMap Context;
     }
 
@@ -141,7 +141,7 @@ public interface IApplicationEvents : IInjectableSingletonEntity
     struct OnCloseViewEventArgs
     {
         public IView View;
-        public EventTimingEnum BeforeOrAfter;
+        public EventTiming BeforeOrAfter;
         public INameValueMap Context;
     }
 
@@ -154,7 +154,7 @@ public interface IApplicationEvents : IInjectableSingletonEntity
     struct OnActivateViewEventArgs
     {
         public IView View;
-        public EventTimingEnum BeforeOrAfter;
+        public EventTiming BeforeOrAfter;
         public INameValueMap Context;
     }
 
@@ -166,7 +166,7 @@ public interface IApplicationEvents : IInjectableSingletonEntity
     struct OnDeactivateViewEventAgrs
     {
         public IView View;
-        public EventTimingEnum BeforeOrAfter;
+        public EventTiming BeforeOrAfter;
         public INameValueMap Context;
     }
 
@@ -177,7 +177,7 @@ public interface IApplicationEvents : IInjectableSingletonEntity
 
     struct OnQuitEventArgs
     {
-        public EventTimingEnum BeforeOrAfter;
+        public EventTiming BeforeOrAfter;
         public INameValueMap Context;
     }
 
@@ -189,7 +189,7 @@ public interface IApplicationEvents : IInjectableSingletonEntity
     struct OnNewEditObjectEventArgs
     {
         public object Edit;
-        public EventTimingEnum BeforeOrAfter;
+        public EventTiming BeforeOrAfter;
         public INameValueMap Context;
     }
 
@@ -203,7 +203,7 @@ public interface IApplicationEvents : IInjectableSingletonEntity
         public bool TranslatingIn;
         public IDocument Document;
         public string FullFileName;
-        public EventTimingEnum BeforeOrAfter;
+        public EventTiming BeforeOrAfter;
         public INameValueMap Context;
     }
 
@@ -216,7 +216,7 @@ public interface IApplicationEvents : IInjectableSingletonEntity
     struct OnActiveProjectChangedEventArgs
     {
         public IDesignProject Project;
-        public EventTimingEnum BeforeOrAfter;
+        public EventTiming BeforeOrAfter;
         public INameValueMap Context;
     }
 
@@ -229,7 +229,7 @@ public interface IApplicationEvents : IInjectableSingletonEntity
     struct OnDocumentChangeEventArgs
     {
         public IDocument Document;
-        public EventTimingEnum BeforeOrAfter;
+        public EventTiming BeforeOrAfter;
         public CommandTypesEnum ReasonsForChange;
         public INameValueMap Context;
     }
@@ -242,7 +242,7 @@ public interface IApplicationEvents : IInjectableSingletonEntity
 
     struct OnReadyEventArgs
     {
-        public EventTimingEnum BeforeOrAfter;
+        public EventTiming BeforeOrAfter;
         public INameValueMap Context;
     }
 
@@ -255,7 +255,7 @@ public interface IApplicationEvents : IInjectableSingletonEntity
     struct OnMigrateDocumentEventArgs
     {
         public IDocument Document;
-        public EventTimingEnum BeforeOrAfter;
+        public EventTiming BeforeOrAfter;
         public INameValueMap Context;
     }
 
@@ -267,7 +267,7 @@ public interface IApplicationEvents : IInjectableSingletonEntity
 
     struct OnApplicationOptionChangeEventArgs
     {
-        public EventTimingEnum BeforeOrAfter;
+        public EventTiming BeforeOrAfter;
         public INameValueMap Context;
     }
 
@@ -279,7 +279,7 @@ public interface IApplicationEvents : IInjectableSingletonEntity
 
     struct OnMoveApplicationWindowEventArgs
     {
-        public EventTimingEnum BeforeOrAfter;
+        public EventTiming BeforeOrAfter;
         public INameValueMap Context;
     }
 
@@ -290,7 +290,7 @@ public interface IApplicationEvents : IInjectableSingletonEntity
 
     struct OnResizeApplicationWindowEventArgs
     {
-        public EventTimingEnum BeforeOrAfter;
+        public EventTiming BeforeOrAfter;
         public INameValueMap Context;
     }
 
@@ -303,7 +303,7 @@ public interface IApplicationEvents : IInjectableSingletonEntity
     struct OnMoveViewEventArgs
     {
         public IView View;
-        public EventTimingEnum BeforeOrAfter;
+        public EventTiming BeforeOrAfter;
         public INameValueMap Context;
     }
 
@@ -315,7 +315,7 @@ public interface IApplicationEvents : IInjectableSingletonEntity
     struct OnResizeViewEventArgs
     {
         public IView View;
-        public EventTimingEnum BeforeOrAfter;
+        public EventTiming BeforeOrAfter;
         public INameValueMap Context;
     }
 

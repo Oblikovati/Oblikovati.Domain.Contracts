@@ -19,7 +19,7 @@ public interface ITriadEventsSink
 
     void OnStartSequence(IMatrix CoordinateSystem, INameValueMap Context, out HandlingCodeEnum HandlingCode);
 
-    void OnMoveTriadOnlyToggle(bool MoveTriadOnly, EventTimingEnum BeforeOrAfter, INameValueMap Context,
+    void OnMoveTriadOnlyToggle(bool MoveTriadOnly, EventTiming BeforeOrAfter, INameValueMap Context,
         out HandlingCodeEnum HandlingCode);
 
     void OnStartMove(TriadSegmentEnum SelectedTriadSegment, ShiftStateEnum ShiftKeys, IMatrix CoordinateSystem,
@@ -27,7 +27,7 @@ public interface ITriadEventsSink
 
     void OnTerminate(bool Cancelled, INameValueMap Context, out HandlingCodeEnum HandlingCode);
 
-    void OnSegmentSelectionChange(TriadSegmentEnum SelectedTriadSegment, EventTimingEnum BeforeOrAfter,
+    void OnSegmentSelectionChange(TriadSegmentEnum SelectedTriadSegment, EventTiming BeforeOrAfter,
         INameValueMap Context, out HandlingCodeEnum HandlingCode);
 
     void OnEndSequence2(bool Cancelled, IMatrix CoordinateSystem, INameValueMap Context,
@@ -35,6 +35,6 @@ public interface ITriadEventsSink
 
     void OnTerminate2(bool Cancelled, INameValueMap Context, out HandlingCodeEnum HandlingCode);
 
-    void OnMoveTriadOnlyToggle2(bool MoveTriadOnly, EventTimingEnum BeforeOrAfter, INameValueMap Context,
+    void OnMoveTriadOnlyToggle2(bool MoveTriadOnly, EventTiming BeforeOrAfter, INameValueMap Context,
         out HandlingCodeEnum HandlingCode);
 }

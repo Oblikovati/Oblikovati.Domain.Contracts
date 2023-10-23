@@ -17,7 +17,7 @@ public interface IAssemblyEvents : IInjectableSingletonEntity
     public struct OnAssemblyChangedEventArgs
     {
         public INameValueMap Context;
-        public EventTimingEnum BeforeOrAfter;
+        public EventTiming BeforeOrAfter;
     }
 
     /// <summary>
@@ -28,7 +28,7 @@ public interface IAssemblyEvents : IInjectableSingletonEntity
     public struct OnAssemblySolveEventArgs
     {
         public I_AssemblySolver Solver;
-        public EventTimingEnum BeforeOrAfter;
+        public EventTiming BeforeOrAfter;
         public INameValueMap Context;
     }
 
@@ -41,7 +41,7 @@ public interface IAssemblyEvents : IInjectableSingletonEntity
     {
         public IAssemblyDocument Document;
         public INameValueMap Context;
-        public EventTimingEnum BeforeOrAfter;
+        public EventTiming BeforeOrAfter;
     }
 
     /// <summary>
@@ -53,7 +53,7 @@ public interface IAssemblyEvents : IInjectableSingletonEntity
     {
         public IAssemblyDocument Document;
         public IComponentOccurrence Occurrence;
-        public EventTimingEnum BeforeOrAfter;
+        public EventTiming BeforeOrAfter;
         public INameValueMap Context;
     }
 
@@ -66,7 +66,7 @@ public interface IAssemblyEvents : IInjectableSingletonEntity
     {
         public IAssemblyDocument Document;
         public IComponentOccurrence Occurrence;
-        public EventTimingEnum BeforeOrAfter;
+        public EventTiming BeforeOrAfter;
         public INameValueMap Context;
     }
 
@@ -79,7 +79,7 @@ public interface IAssemblyEvents : IInjectableSingletonEntity
     {
         public IAssemblyDocument Document;
         public object Constraint;
-        public EventTimingEnum BeforeOrAfter;
+        public EventTiming BeforeOrAfter;
         public INameValueMap Context;
     }
 
@@ -92,7 +92,7 @@ public interface IAssemblyEvents : IInjectableSingletonEntity
     {
         public IAssemblyDocument Document;
         public object Relationship;
-        public EventTimingEnum BeforeOrAfter;
+        public EventTiming BeforeOrAfter;
         public INameValueMap Context;
     }
 
@@ -105,7 +105,7 @@ public interface IAssemblyEvents : IInjectableSingletonEntity
     {
         public IDocument Document;
         public object Entity;
-        public EventTimingEnum BeforeOrAfter;
+        public EventTiming BeforeOrAfter;
         public INameValueMap Context;
     }
 
@@ -118,7 +118,7 @@ public interface IAssemblyEvents : IInjectableSingletonEntity
     {
         public IAssemblyDocument Document;
         public DocumentLoadStateEnum NewLoadState;
-        public EventTimingEnum BeforeOrAfter;
+        public EventTiming BeforeOrAfter;
         public INameValueMap Context;
     }
 }

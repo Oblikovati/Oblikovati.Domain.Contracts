@@ -57,7 +57,7 @@ public interface ISurfaceBody
         out int PolylineCount, out List<int> PolylineLengths);
 
     void GetExistingStrokeTolerances(out int ToleranceCount, out List<double> ExistingTolerances);
-    object LocateUsingPoint(ObjectTypeEnum ObjectType, IPoint PointOn, object ProximityTolerance);
+    object LocateUsingPoint(ObjectType ObjectType, IPoint PointOn, object ProximityTolerance);
 
     void FindUsingRay(IPoint RayStartPoint, IUnitVector RayDirection, double Radius,
         out IObjectsEnumerator FoundEntities, out IObjectsEnumerator LocationPoints, bool FindFirstOnly);

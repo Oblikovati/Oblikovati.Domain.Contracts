@@ -6,6 +6,6 @@ namespace Oblikovati.Contracts;
 
 public interface IPanelBarEventsSink
 {
-    void OnCommandBarSelection(ICommandBar CommandBar, EventTimingEnum BeforeOrAfter, INameValueMap Context,
+    void OnCommandBarSelection(ICommandBar CommandBar, EventTiming BeforeOrAfter, INameValueMap Context,
         out HandlingCodeEnum HandlingCode);
 }

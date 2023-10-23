@@ -7,5 +7,5 @@ namespace Oblikovati.Contracts.Application.Documents.DrawingDocument;
 public interface IDrawingEventsSink
 {
     void OnRetrieveDimensions(IObjectsEnumerator SketchDimensions, IGeneralDimensionsEnumerator DrawingDimensions,
-        EventTimingEnum BeforeOrAfter, INameValueMap Context, out HandlingCodeEnum HandlingCode);
+        EventTiming BeforeOrAfter, INameValueMap Context, out HandlingCodeEnum HandlingCode);
 }

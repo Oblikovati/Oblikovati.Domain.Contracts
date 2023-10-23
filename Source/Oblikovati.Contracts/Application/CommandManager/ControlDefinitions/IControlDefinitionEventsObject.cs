@@ -7,6 +7,6 @@ public interface IControlDefinitionEventsObject
 {
     IControlDefinition Parent { get; }
 
-    void FireOnCommandInputs(EventTimingEnum BeforeOrAfter, INameValueMap Context, out INameValueMap Inputs,
+    void FireOnCommandInputs(EventTiming BeforeOrAfter, INameValueMap Context, out INameValueMap Inputs,
         out HandlingCodeEnum HandlingCode);
 }

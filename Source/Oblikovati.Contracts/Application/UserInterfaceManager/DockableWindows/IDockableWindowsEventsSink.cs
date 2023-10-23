@@ -7,9 +7,9 @@ public interface IDockableWindowsEventsSink
 {
     void OnHelp(IDockableWindow DockableWindow, INameValueMap Context, out HandlingCodeEnum HandlingCode);
 
-    void OnHide(IDockableWindow DockableWindow, EventTimingEnum BeforeOrAfter, INameValueMap Context,
+    void OnHide(IDockableWindow DockableWindow, EventTiming BeforeOrAfter, INameValueMap Context,
         out HandlingCodeEnum HandlingCode);
 
-    void OnShow(IDockableWindow DockableWindow, EventTimingEnum BeforeOrAfter, INameValueMap Context,
+    void OnShow(IDockableWindow DockableWindow, EventTiming BeforeOrAfter, INameValueMap Context,
         out HandlingCodeEnum HandlingCode);
 }

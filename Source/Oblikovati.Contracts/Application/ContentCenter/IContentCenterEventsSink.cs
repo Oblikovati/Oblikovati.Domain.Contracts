@@ -6,6 +6,6 @@ namespace Oblikovati.Contracts.Application.ContentCenter;
 
 public interface IContentCenterEventsSink
 {
-    void OnRefreshStandardComponents(IDocument Document, EventTimingEnum BeforeOrAfter, INameValueMap Context,
+    void OnRefreshStandardComponents(IDocument Document, EventTiming BeforeOrAfter, INameValueMap Context,
         out HandlingCodeEnum HandlingCode);
 }

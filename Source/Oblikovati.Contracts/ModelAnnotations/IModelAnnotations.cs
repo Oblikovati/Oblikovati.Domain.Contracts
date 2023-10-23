@@ -15,7 +15,7 @@ public interface IModelAnnotations : IList<IModelAnnotations>
     IModelCompositeAnnotations ModelCompositeAnnotations { get; }
     IModelGeneralNotes ModelGeneralNotes { get; }
 
-    IAnnotationPlaneDefinitionsEnumerator CreateAnnotationPlaneDefinitionUsingIntents(ObjectTypeEnum AnnotationType,
+    IAnnotationPlaneDefinitionsEnumerator CreateAnnotationPlaneDefinitionUsingIntents(ObjectType AnnotationType,
         IGeometryIntent IntentOne, object IntentTwo, object IntentThree, object XAxis);
 
     IAnnotationPlaneDefinition CreateAnnotationPlaneDefinitionUsingPlane(object Plane, object XAxisDirection);

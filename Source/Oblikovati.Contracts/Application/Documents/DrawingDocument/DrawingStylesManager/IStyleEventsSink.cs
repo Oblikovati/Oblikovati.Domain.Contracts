@@ -6,18 +6,18 @@ namespace Oblikovati.Contracts.Application.Documents.DrawingDocument.DrawingStyl
 
 public interface IStyleEventsSink
 {
-    void OnDelete(IDocument Document, object Style, EventTimingEnum BeforeOrAfter, INameValueMap Context,
+    void OnDelete(IDocument Document, object Style, EventTiming BeforeOrAfter, INameValueMap Context,
         out HandlingCodeEnum HandlingCode);
 
-    void OnNewStyle(IDocument Document, object Style, EventTimingEnum BeforeOrAfter, INameValueMap Context,
+    void OnNewStyle(IDocument Document, object Style, EventTiming BeforeOrAfter, INameValueMap Context,
         out HandlingCodeEnum HandlingCode);
 
-    void OnActivateStyle(IDocument Document, object Style, EventTimingEnum BeforeOrAfter, INameValueMap Context,
+    void OnActivateStyle(IDocument Document, object Style, EventTiming BeforeOrAfter, INameValueMap Context,
         out HandlingCodeEnum HandlingCode);
 
-    void OnStyleChange(IDocument Document, object Style, EventTimingEnum BeforeOrAfter, INameValueMap Context,
+    void OnStyleChange(IDocument Document, object Style, EventTiming BeforeOrAfter, INameValueMap Context,
         out HandlingCodeEnum HandlingCode);
 
-    void OnMigrateStyleLibrary(string LibraryPath, EventTimingEnum BeforeOrAfter, INameValueMap Context,
+    void OnMigrateStyleLibrary(string LibraryPath, EventTiming BeforeOrAfter, INameValueMap Context,
         out HandlingCodeEnum HandlingCode);
 }

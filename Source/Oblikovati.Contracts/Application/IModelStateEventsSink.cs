@@ -7,12 +7,12 @@ namespace Oblikovati.Contracts.Application;
 
 public interface IModelStateEventsSink
 {
-    void OnDeleteModelState(IDocument Document, object ModelState, EventTimingEnum BeforeOrAfter, INameValueMap Context,
+    void OnDeleteModelState(IDocument Document, object ModelState, EventTiming BeforeOrAfter, INameValueMap Context,
         out HandlingCodeEnum HandlingCode);
 
-    void OnNewModelState(IDocument Document, IModelState ModelState, EventTimingEnum BeforeOrAfter,
+    void OnNewModelState(IDocument Document, IModelState ModelState, EventTiming BeforeOrAfter,
         INameValueMap Context, out HandlingCodeEnum HandlingCode);
 
-    void OnActivateModelState(IDocument Document, IModelState ModelState, EventTimingEnum BeforeOrAfter,
+    void OnActivateModelState(IDocument Document, IModelState ModelState, EventTiming BeforeOrAfter,
         INameValueMap Context, out HandlingCodeEnum HandlingCode);
 }

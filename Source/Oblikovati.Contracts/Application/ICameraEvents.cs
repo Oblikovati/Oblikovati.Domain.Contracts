@@ -11,7 +11,7 @@ public interface ICameraEvents : IInjectableSingletonEntity
     public struct OnCameraChangeEventArgs
     {
         public IView View;
-        public EventTimingEnum BeforeOrAfter;
+        public EventTiming BeforeOrAfter;
         public INameValueMap Context;
     }
 }

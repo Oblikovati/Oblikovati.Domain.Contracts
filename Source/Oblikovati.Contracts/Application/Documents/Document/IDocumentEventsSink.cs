@@ -5,15 +5,15 @@ namespace Oblikovati.Contracts.Application.Documents.Document;
 
 public interface IDocumentEventsSink
 {
-    void OnSave(EventTimingEnum BeforeOrAfter, INameValueMap Context, out HandlingCodeEnum HandlingCode);
-    void OnClose(EventTimingEnum BeforeOrAfter, INameValueMap Context, out HandlingCodeEnum HandlingCode);
-    void OnActivate(EventTimingEnum BeforeOrAfter, INameValueMap Context, out HandlingCodeEnum HandlingCode);
-    void OnDeactivate(EventTimingEnum BeforeOrAfter, INameValueMap Context, out HandlingCodeEnum HandlingCode);
-    void OnChangeSelectSet(EventTimingEnum BeforeOrAfter, INameValueMap Context, out HandlingCodeEnum HandlingCode);
+    void OnSave(EventTiming BeforeOrAfter, INameValueMap Context, out HandlingCodeEnum HandlingCode);
+    void OnClose(EventTiming BeforeOrAfter, INameValueMap Context, out HandlingCodeEnum HandlingCode);
+    void OnActivate(EventTiming BeforeOrAfter, INameValueMap Context, out HandlingCodeEnum HandlingCode);
+    void OnDeactivate(EventTiming BeforeOrAfter, INameValueMap Context, out HandlingCodeEnum HandlingCode);
+    void OnChangeSelectSet(EventTiming BeforeOrAfter, INameValueMap Context, out HandlingCodeEnum HandlingCode);
 
-    void OnChange(CommandTypesEnum ReasonsForChange, EventTimingEnum BeforeOrAfter, INameValueMap Context,
+    void OnChange(CommandTypesEnum ReasonsForChange, EventTiming BeforeOrAfter, INameValueMap Context,
         out HandlingCodeEnum HandlingCode);
 
-    void OnDelete(object Entity, EventTimingEnum BeforeOrAfter, INameValueMap Context,
+    void OnDelete(object Entity, EventTiming BeforeOrAfter, INameValueMap Context,
         out HandlingCodeEnum HandlingCode);
 }

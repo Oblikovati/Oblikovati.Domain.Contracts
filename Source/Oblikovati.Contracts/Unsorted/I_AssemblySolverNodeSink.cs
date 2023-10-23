@@ -5,5 +5,5 @@ namespace Oblikovati.Contracts.Unsorted;
 
 public interface I_AssemblySolverNodeSink
 {
-    void OnSolve(INameValueMap Context, EventTimingEnum BeforeOrAfter);
+    void OnSolve(INameValueMap Context, EventTiming BeforeOrAfter);
 }

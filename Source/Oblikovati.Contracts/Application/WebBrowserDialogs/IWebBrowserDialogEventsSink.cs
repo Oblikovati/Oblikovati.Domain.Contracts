@@ -5,6 +5,6 @@ namespace Oblikovati.Contracts.Application.WebBrowserDialogs;
 
 public interface IWebBrowserDialogEventsSink
 {
-    void OnClose(EventTimingEnum BeforeOrAfter, INameValueMap Context, out HandlingCodeEnum HandlingCode);
+    void OnClose(EventTiming BeforeOrAfter, INameValueMap Context, out HandlingCodeEnum HandlingCode);
     void OnHelp(INameValueMap Context, out HandlingCodeEnum HandlingCode);
 }

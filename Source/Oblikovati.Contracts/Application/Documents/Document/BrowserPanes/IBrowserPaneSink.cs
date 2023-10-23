@@ -7,5 +7,5 @@ public interface IBrowserPaneSink
 {
     void OnActivate();
     void OnDeactivate();
-    void OnHelp(EventTimingEnum BeforeOrAfter, INameValueMap Context, out HandlingCodeEnum HandlingCode);
+    void OnHelp(EventTiming BeforeOrAfter, INameValueMap Context, out HandlingCodeEnum HandlingCode);
 }

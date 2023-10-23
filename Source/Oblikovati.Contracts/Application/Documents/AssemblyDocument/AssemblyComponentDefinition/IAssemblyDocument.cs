@@ -41,7 +41,7 @@ public interface IAssemblyDocument : IDocument
     string ActiveAnnotationsStandard { get; set; }
     string AssociativeForeignFilename { get; }
 
-    void GetSelectedObject(IGenericObject Selection, out ObjectTypeEnum ObjectType, out INameValueMap AdditionalData,
+    void GetSelectedObject(IGenericObject Selection, out ObjectType ObjectType, out INameValueMap AdditionalData,
         out IComponentOccurrence ContainingOccurrence, ref object SelectedObject);
 
     void ExecutePromptToChoose3daStyle();

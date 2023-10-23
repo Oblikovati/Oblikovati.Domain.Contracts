@@ -5,5 +5,5 @@ namespace Oblikovati.Contracts.Application.Documents.PartDocument.PartComponentD
 
 public interface IPartEventsSink
 {
-    void OnSurfaceBodyChanged(INameValueMap Context, EventTimingEnum BeforeOrAfter, out HandlingCodeEnum HandlingCode);
+    void OnSurfaceBodyChanged(INameValueMap Context, EventTiming BeforeOrAfter, out HandlingCodeEnum HandlingCode);
 }

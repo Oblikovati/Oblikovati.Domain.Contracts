@@ -11,6 +11,6 @@ public interface IMiniToolbarSink
     void OnStartMove(INameValueMap Context, out HandlingCodeEnum HandlingCode);
     void OnMove(INameValueMap Context, out HandlingCodeEnum HandlingCode);
     void OnEndMove(INameValueMap Context, out HandlingCodeEnum HandlingCode);
-    void OnHide(EventTimingEnum BeforeOrAfter, INameValueMap Context, out HandlingCodeEnum HandlingCode);
-    void OnShow(EventTimingEnum BeforeOrAfter, INameValueMap Context, out HandlingCodeEnum HandlingCode);
+    void OnHide(EventTiming BeforeOrAfter, INameValueMap Context, out HandlingCodeEnum HandlingCode);
+    void OnShow(EventTiming BeforeOrAfter, INameValueMap Context, out HandlingCodeEnum HandlingCode);
 }

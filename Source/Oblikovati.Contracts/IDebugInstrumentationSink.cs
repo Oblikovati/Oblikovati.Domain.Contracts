@@ -9,5 +9,5 @@ public interface IDebugInstrumentationSink
     void ObjectAddRefd(int Cookie, int ToReferenceCount);
     void ObjectReleased(int Cookie, int ToReferenceCount);
     void ObjectQueryInterfaced(int Cookie, string InterfaceIID, bool Successful);
-    void OnMemberInvoke(int Cookie, string MemberName, EventTimingEnum BeforeOrAfter, int Result);
+    void OnMemberInvoke(int Cookie, string MemberName, EventTiming BeforeOrAfter, int Result);
 }
