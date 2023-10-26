@@ -18,7 +18,7 @@ public interface IApplicationEvents : IInjectableSingletonEntity
     /// <summary>
     /// Handler for Event that is fired whenever a document is activated.
     /// </summary>
-    EventHandler<OnNewDocumentEventArgs>? OnNewDocument { get; }
+    EventHandler<OnNewDocumentEventArgs>? OnNewDocument { get; set; }
 
     struct OnInitializeDocumentEventArgs
     {
@@ -33,7 +33,7 @@ public interface IApplicationEvents : IInjectableSingletonEntity
     /// At the time this event fires, the document is not open yet.
     /// Calling methods or properties on the document will force it to open.
     /// </summary>
-    EventHandler<OnInitializeDocumentEventArgs>? OnInitializeDocument { get; }
+    EventHandler<OnInitializeDocumentEventArgs>? OnInitializeDocument { get; set; }
 
     struct OnOpenDocumentEventArgs
     {
@@ -46,7 +46,7 @@ public interface IApplicationEvents : IInjectableSingletonEntity
     /// <summary>
     /// Handler for The event that notifies a client when a document is opened.
     /// </summary>
-    EventHandler<OnOpenDocumentEventArgs>? OnOpenDocument { get; }
+    EventHandler<OnOpenDocumentEventArgs>? OnOpenDocument { get; set; }
 
     struct OnSaveDocumentEventArgs
     {
@@ -58,7 +58,7 @@ public interface IApplicationEvents : IInjectableSingletonEntity
     /// <summary>
     /// Handler for The Event notifies a client whenever a document is saved.
     /// </summary>
-    EventHandler<OnSaveDocumentEventArgs>? OnSaveDocument { get; }
+    EventHandler<OnSaveDocumentEventArgs>? OnSaveDocument { get; set; }
 
     struct OnCloseDocumentEventArgs
     {
@@ -71,7 +71,7 @@ public interface IApplicationEvents : IInjectableSingletonEntity
     /// <summary>
     /// Handler for Event that is fired whenever a document is closed.
     /// </summary>
-    EventHandler<OnCloseDocumentEventArgs>? OnCloseDocument { get; }
+    EventHandler<OnCloseDocumentEventArgs>? OnCloseDocument { get; set; }
 
     struct OnTerminateDocumentEventArgs
     {
@@ -86,7 +86,7 @@ public interface IApplicationEvents : IInjectableSingletonEntity
     /// Termination of a document is a complete close of the document.
     /// A document terminate corresponds with a document initialize.
     /// </summary>
-    EventHandler<OnTerminateDocumentEventArgs>? OnTerminateDocument { get; }
+    EventHandler<OnTerminateDocumentEventArgs>? OnTerminateDocument { get; set; }
 
     struct OnActivateDocumentEventArgs
     {
@@ -98,7 +98,7 @@ public interface IApplicationEvents : IInjectableSingletonEntity
     /// <summary>
     /// Handler for Event that is fired whenever a document is activated.
     /// </summary>
-    EventHandler<OnActivateDocumentEventArgs>? OnActivateDocument { get; }
+    EventHandler<OnActivateDocumentEventArgs>? OnActivateDocument { get; set; }
 
     struct OnDeactivateDocumentEventArgs
     {
@@ -110,7 +110,7 @@ public interface IApplicationEvents : IInjectableSingletonEntity
     /// <summary>
     /// Handler for The event that notifies a client when a document is deactivated.
     /// </summary>
-    EventHandler<OnDeactivateDocumentEventArgs>? OnDeactivateDocument { get; }
+    EventHandler<OnDeactivateDocumentEventArgs>? OnDeactivateDocument { get; set; }
 
     struct OnNewViewEventArgs
     {
@@ -123,7 +123,7 @@ public interface IApplicationEvents : IInjectableSingletonEntity
     /// Handler for The event that notifies a client when a new View object is created.
     /// An API "View" object is equivalent to an Oblikovati graphics window.
     /// </summary>
-    EventHandler<OnNewViewEventArgs>? OnNewView { get; }
+    EventHandler<OnNewViewEventArgs>? OnNewView { get; set; }
 
     struct OnDisplayModeChangeEventArgs
     {
@@ -136,7 +136,7 @@ public interface IApplicationEvents : IInjectableSingletonEntity
     /// Handler for The event that notifies a client when the display mode of
     /// a view has changed.
     /// </summary>
-    EventHandler<OnDisplayModeChangeEventArgs>? OnDisplayModeChange { get; }
+    EventHandler<OnDisplayModeChangeEventArgs>? OnDisplayModeChange { get; set; }
 
     struct OnCloseViewEventArgs
     {
@@ -149,7 +149,7 @@ public interface IApplicationEvents : IInjectableSingletonEntity
     /// Handler for The event that notifies a client when a view is closed.
     /// An API view is equivalent to an Oblikovati graphics window.
     /// </summary>
-    EventHandler<OnCloseViewEventArgs>? OnCloseView { get; }
+    EventHandler<OnCloseViewEventArgs>? OnCloseView { get; set; }
 
     struct OnActivateViewEventArgs
     {
@@ -161,7 +161,7 @@ public interface IApplicationEvents : IInjectableSingletonEntity
     /// <summary>
     /// Handler for Event that fires just after a view is activated
     /// </summary>
-    EventHandler<OnActivateViewEventArgs>? OnActivateView { get; }
+    EventHandler<OnActivateViewEventArgs>? OnActivateView { get; set; }
 
     struct OnDeactivateViewEventAgrs
     {
@@ -173,7 +173,7 @@ public interface IApplicationEvents : IInjectableSingletonEntity
     /// <summary>
     /// Handler for The event that Fires just after a view is deactivated.
     /// </summary>
-    EventHandler<OnDeactivateViewEventAgrs> OnDeactivateView { get; }
+    EventHandler<OnDeactivateViewEventAgrs> OnDeactivateView { get; set; }
 
     struct OnQuitEventArgs
     {
@@ -184,7 +184,7 @@ public interface IApplicationEvents : IInjectableSingletonEntity
     /// <summary>
     /// Handler for The event that notifies a client when Oblikovati is being shut down.
     /// </summary>
-    EventHandler<OnQuitEventArgs>? OnQuit { get; }
+    EventHandler<OnQuitEventArgs>? OnQuit { get; set; }
 
     struct OnNewEditObjectEventArgs
     {
@@ -196,7 +196,7 @@ public interface IApplicationEvents : IInjectableSingletonEntity
     /// <summary>
     /// Adds a handler for The event that notifies a client when the edit object is changing.
     /// </summary>
-    EventHandler<OnNewEditObjectEventArgs>? OnNewEditObject { get; }
+    EventHandler<OnNewEditObjectEventArgs>? OnNewEditObject { get; set; }
 
     struct OnTranslateDocumentEventArgs
     {
@@ -211,7 +211,7 @@ public interface IApplicationEvents : IInjectableSingletonEntity
     /// Handler for The event notifies a client whenever a file is translated into Oblikovati
     /// or an Oblikovati document is translated out to a non-Oblikovati file.
     /// </summary>
-    EventHandler<OnTranslateDocumentEventArgs>? OnTranslateDocument { get; }
+    EventHandler<OnTranslateDocumentEventArgs>? OnTranslateDocument { get; set; }
 
     struct OnActiveProjectChangedEventArgs
     {
@@ -224,7 +224,7 @@ public interface IApplicationEvents : IInjectableSingletonEntity
     /// Handler for the event that Fires just before and soon after the active 
     /// project is changed, supplying the context in which this action is being taken.
     /// </summary>
-    EventHandler<OnActiveProjectChangedEventArgs>? OnActiveProjectChanged { get; }
+    EventHandler<OnActiveProjectChangedEventArgs>? OnActiveProjectChanged { get; set; }
 
     struct OnDocumentChangeEventArgs
     {
@@ -238,7 +238,7 @@ public interface IApplicationEvents : IInjectableSingletonEntity
     /// Handler for the event that Fires just before the document is changed,
     /// supplying the reasons for change and the context in which this action is being taken.
     /// </summary>
-    EventHandler<OnDocumentChangeEventArgs>? OnDocumentChange { get; }
+    EventHandler<OnDocumentChangeEventArgs>? OnDocumentChange { get; set; }
 
     struct OnReadyEventArgs
     {
@@ -250,7 +250,7 @@ public interface IApplicationEvents : IInjectableSingletonEntity
     /// Handler for The event that notifies a client when Oblikovati has completely
     /// initialized and is ready for interactive use.
     /// </summary>
-    EventHandler<OnReadyEventArgs>? OnReady { get; }
+    EventHandler<OnReadyEventArgs>? OnReady { get; set; }
 
     struct OnMigrateDocumentEventArgs
     {
@@ -263,7 +263,7 @@ public interface IApplicationEvents : IInjectableSingletonEntity
     /// Handler for the Event that is fired whenever a document is being 
     /// explicitly migrated.
     /// </summary>
-    EventHandler<OnMigrateDocumentEventArgs>? OnMigrateDocument { get; }
+    EventHandler<OnMigrateDocumentEventArgs>? OnMigrateDocument { get; set; }
 
     struct OnApplicationOptionChangeEventArgs
     {
@@ -275,7 +275,7 @@ public interface IApplicationEvents : IInjectableSingletonEntity
     /// Handler for the event that Fires just before and soon after 
     /// application options are modified.
     /// </summary>
-    EventHandler<OnApplicationOptionChangeEventArgs>? OnApplicationOptionChange { get; }
+    EventHandler<OnApplicationOptionChangeEventArgs>? OnApplicationOptionChange { get;  set;}
 
     struct OnMoveApplicationWindowEventArgs
     {
@@ -286,7 +286,7 @@ public interface IApplicationEvents : IInjectableSingletonEntity
     /// <summary>
     /// Handler for the event that Fires after application main window is moved.
     /// </summary>
-    EventHandler<OnMoveApplicationWindowEventArgs>? OnMoveApplicationWindow { get; }
+    EventHandler<OnMoveApplicationWindowEventArgs>? OnMoveApplicationWindow { get; set; }
 
     struct OnResizeApplicationWindowEventArgs
     {
@@ -298,7 +298,7 @@ public interface IApplicationEvents : IInjectableSingletonEntity
     /// Handler for the event that Fires after application main window is resized, 
     /// or layout is recalculated.
     /// </summary>
-    EventHandler<OnResizeApplicationWindowEventArgs>? OnResizeApplicationWindow { get; }
+    EventHandler<OnResizeApplicationWindowEventArgs>? OnResizeApplicationWindow { get; set; }
 
     struct OnMoveViewEventArgs
     {
@@ -310,7 +310,7 @@ public interface IApplicationEvents : IInjectableSingletonEntity
     /// <summary>
     /// Handler for the event that Fires after view window is moved.
     /// </summary>
-    EventHandler<OnMoveViewEventArgs>? OnMoveView { get; }
+    EventHandler<OnMoveViewEventArgs>? OnMoveView { get; set; }
 
     struct OnResizeViewEventArgs
     {
@@ -323,5 +323,5 @@ public interface IApplicationEvents : IInjectableSingletonEntity
     /// Handler for the event that Fires after view window is resized, 
     /// or window state is changed.
     /// </summary>
-    EventHandler<OnResizeViewEventArgs>? OnResizeView { get; }
+    EventHandler<OnResizeViewEventArgs>? OnResizeView { get; set; }
 }

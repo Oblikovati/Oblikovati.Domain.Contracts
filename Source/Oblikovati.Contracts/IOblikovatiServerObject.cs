@@ -102,7 +102,6 @@ public interface IOblikovatiServerObject
     bool _IsOblikovatiFile { get; }
     bool _DefaultDocType { get; }
     bool _IsTranscriptingOn { get; set; }
-    ICustomDataEvents _CustomDataEvents { get; }
     bool _LibraryDocumentModifiable { get; set; }
 
     string GetTemplateFile(DocumentType DocumentType, SystemOfMeasureEnum SystemOfMeasure,

@@ -67,7 +67,6 @@ public interface IApplication : IApplicationBase, IInjectableSingletonEntity
     IColorScheme ActiveColorScheme { get; }
     IColorSchemes ColorSchemes { get; }
     IiLogicOptions iLogicOptions { get; }
-    ICustomDataEvents _CustomDataEvents { get; }
     bool _LibraryDocumentModifiable { get; set; }
     IDocument ActiveDocument { get; }
     IDocument ActiveEditDocument { get; }
