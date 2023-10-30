@@ -2,15 +2,14 @@
 
 public enum ControlTypeEnum
 {
-    kButtonPopupControl,
-    kPopupControl,
-    kSplitButtonMRUControl,
-    kSplitButtonControl,
-    kButtonControl,
-    kComboBoxControl,
-    kMacroControl,
-    kUnknownControl,
-    kSeparatorControl,
-    kGalleryControl,
-    kTogglePopupControl,
+    ButtonPopupControl,
+    PopupControl,
+    SplitButtonControl,
+    ButtonControl,
+    ComboBoxControl,
+    MacroControl,
+    UnknownControl,
+    SeparatorControl,
+    GalleryControl,
+    TogglePopupControl,
 }

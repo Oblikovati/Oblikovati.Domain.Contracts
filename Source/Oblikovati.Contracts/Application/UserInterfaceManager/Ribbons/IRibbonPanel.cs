@@ -6,7 +6,7 @@ public interface IRibbonPanel
     string DisplayName { get; }
     string InternalName { get; }
     ICommandControls CommandControls { get; }
-    string ClientId { get; }
+    Guid? ClientId { get; }
     bool Visible { get; set; }
     bool Docked { get; set; }
     ICommandControls SlideoutControls { get; }

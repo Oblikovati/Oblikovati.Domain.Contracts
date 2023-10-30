@@ -2,6 +2,6 @@
 
 public enum SearchBoxFilterEnum
 {
-    kUnresolvedFiles,
-    kOutOfDateFiles,
+    UnresolvedFiles,
+    OutOfDateFiles,
 }

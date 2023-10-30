@@ -7,9 +7,8 @@ namespace Oblikovati.Contracts.Application.UserInterfaceManager.Ribbons;
 /// The CommandControls collection object provides access to a collection of user interface controls
 /// and provides methods to create additional controls.
 /// </summary>
-public interface ICommandControls : IList<ICommandControl>
+public interface ICommandControls : IDictionary<string, ICommandControl>
 {
-    public ICommandControl this[string Index] { get; }
 
     /// <summary>
     /// 	Method that creates a new button CommandControl object.
@@ -21,7 +20,7 @@ public interface ICommandControls : IList<ICommandControl>
     /// <param name="TargetControlInternalName"></param>
     /// <param name="InsertBeforeTargetControl"></param>
     /// <returns></returns>
-    ICommandControl AddButton(IButtonDefinition ButtonDefinition, bool UseLargeIcon, bool ShowText,
+    ICommandControl AddButton(IButtonDefinition ButtonDefinition, bool UseLargeIcon, bool ShowText = false,
         string TargetControlInternalName = "", bool InsertBeforeTargetControl = false);
 
     /// <summary>

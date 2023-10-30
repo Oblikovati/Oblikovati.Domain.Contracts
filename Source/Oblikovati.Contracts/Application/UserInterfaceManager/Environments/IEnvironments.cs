@@ -19,5 +19,5 @@ public interface IEnvironments : IList<IEnvironment>, IInjectableSingletonEntity
     /// <param name="StandardIcon"></param>
     /// <param name="LargeIcon"></param>
     /// <returns></returns>
-    IEnvironment Add(string DisplayName, string InternalName, string ClientId, object StandardIcon, object LargeIcon);
+    IEnvironment Add(string DisplayName, string InternalName, Guid? ClientId = default, object? StandardIcon = null, object? LargeIcon = null);
 }

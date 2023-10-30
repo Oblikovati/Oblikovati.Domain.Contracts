@@ -2,12 +2,12 @@
 
 public interface IRibbonTab
 {
-    IRibbon Parent { get; }
+    IRibbon Ribbon { get; }
     string DisplayName { get; }
     string InternalName { get; }
     IRibbonPanels RibbonPanels { get; }
     bool Active { get; }
-    string ClientId { get; }
+    Guid? ClientId { get; }
     bool Visible { get; set; }
     bool Contextual { get; }
     string KeyTip { get; set; }

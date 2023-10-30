@@ -1,7 +1,11 @@
-﻿namespace Oblikovati.Contracts.Application.UserInterfaceManager.Ribbons;
+﻿using DynamicData.Binding;
+using System.Collections.ObjectModel;
 
-public interface IRibbonTabs : IList<IRibbonTab>
+namespace Oblikovati.Contracts.Application.UserInterfaceManager.Ribbons;
+
+public interface IRibbonTabs : IDictionary<string, IRibbonTab>
 {
-    IRibbonTab Add(string DisplayName, string InternalName, string? ClientId = null,
+    IObservable<IRibbonTab> SelectedTab { get; }
+    IRibbonTab Add(string DisplayName, string InternalName, Guid? ClientId = null,
         string? TargetTabInternalName = null, bool InsertBeforeTargetTab = false, bool Contextual = false);
 }

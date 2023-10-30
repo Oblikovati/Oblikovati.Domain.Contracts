@@ -2,7 +2,7 @@
 
 public interface IRibbon
 {
-    IUserInterfaceManager Parent { get; }
+    IUserInterfaceManager UserInterfaceManager { get; }
     string InternalName { get; }
     IRibbonTabs RibbonTabs { get; }
     bool Active { get; }

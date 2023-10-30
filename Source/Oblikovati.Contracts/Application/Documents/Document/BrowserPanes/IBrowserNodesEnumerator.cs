@@ -1,4 +1,6 @@
-﻿namespace Oblikovati.Contracts.Application.Documents.Document.BrowserPanes;
+﻿using DynamicData.Binding;
+
+namespace Oblikovati.Contracts.Application.Documents.Document.BrowserPanes;
 
 public interface IBrowserNodesEnumerator : IList<IBrowserNode>
 {
