@@ -1,5 +1,6 @@
 ﻿using Oblikovati.Contracts.Application.Documents.AssemblyDocument.AssemblyComponentDefinition.ComponentOccurence;
 using Oblikovati.Contracts.Attributes;
+using Oblikovati.Contracts.NotClassified;
 
 namespace Oblikovati.Contracts.Sketch3D.GeometricConstraints3D;
 

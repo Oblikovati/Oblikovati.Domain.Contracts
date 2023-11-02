@@ -1,4 +1,5 @@
 ﻿using Oblikovati.Contracts.Application.TransientGeometry;
+using Oblikovati.Contracts.NotClassified;
 
 namespace Oblikovati.Contracts.Sketch3D;
 

@@ -2,6 +2,7 @@
 using Oblikovati.Contracts.Application.Documents.PartDocument.PartComponentDefinition.iMateDefinitions;
 using Oblikovati.Contracts.Attributes;
 using Oblikovati.Contracts.Enums;
+using Oblikovati.Contracts.NotClassified;
 using Oblikovati.Contracts.Parameters;
 using Oblikovati.Contracts.Sketch2D.DimensionConstraints;
 

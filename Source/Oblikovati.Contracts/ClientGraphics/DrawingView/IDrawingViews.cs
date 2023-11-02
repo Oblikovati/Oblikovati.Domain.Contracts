@@ -2,6 +2,7 @@
 using Oblikovati.Contracts.Application.Documents.DrawingDocument;
 using Oblikovati.Contracts.Application.TransientGeometry;
 using Oblikovati.Contracts.Enums;
+using Oblikovati.Contracts.NotClassified;
 
 namespace Oblikovati.Contracts.ClientGraphics.DrawingView;
 

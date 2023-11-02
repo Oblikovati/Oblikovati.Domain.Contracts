@@ -13,6 +13,7 @@ using Oblikovati.Contracts.ClientGraphics.DrawingView;
 using Oblikovati.Contracts.DWG;
 using Oblikovati.Contracts.Enums;
 using Oblikovati.Contracts.GraphicsDataSets;
+using Oblikovati.Contracts.NotClassified;
 using Oblikovati.Contracts.Parameters;
 using Oblikovati.Contracts.Sketch2D;
 using Oblikovati.Contracts.Unsorted;

@@ -1,4 +1,6 @@
-﻿namespace Oblikovati.Contracts.DWG;
+﻿using Oblikovati.Contracts.NotClassified;
+
+namespace Oblikovati.Contracts.DWG;
 
 public interface IDWGAcadSupportedProxy
 {

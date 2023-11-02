@@ -10,6 +10,7 @@ using Oblikovati.Contracts.ClientGraphics.DrawingView;
 using Oblikovati.Contracts.DWG;
 using Oblikovati.Contracts.Enums;
 using Oblikovati.Contracts.GraphicsDataSets;
+using Oblikovati.Contracts.NotClassified;
 using Oblikovati.Contracts.Sketch2D;
 
 namespace Oblikovati.Contracts.Application.Documents.PartDocument.SheetMetalComponentDefinition;

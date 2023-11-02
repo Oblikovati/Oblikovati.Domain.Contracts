@@ -1,4 +1,6 @@
-﻿namespace Oblikovati.Contracts.Application.Documents.PartDocument.SheetMetalComponentDefinition.SheetMetalFeatures.
+﻿using Oblikovati.Contracts.NotClassified;
+
+namespace Oblikovati.Contracts.Application.Documents.PartDocument.SheetMetalComponentDefinition.SheetMetalFeatures.
     UnfoldFeature;
 
 public interface IUnfoldFeatures : IList<IUnfoldFeatures>

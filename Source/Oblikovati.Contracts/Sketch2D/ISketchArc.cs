@@ -4,6 +4,7 @@ using Oblikovati.Contracts.Application.TransientObjects.Math;
 using Oblikovati.Contracts.Application.TransientObjects.Utility;
 using Oblikovati.Contracts.Attributes;
 using Oblikovati.Contracts.Enums;
+using Oblikovati.Contracts.NotClassified;
 using Oblikovati.Contracts.Sketch2D.DimensionConstraints;
 
 namespace Oblikovati.Contracts.Sketch2D;

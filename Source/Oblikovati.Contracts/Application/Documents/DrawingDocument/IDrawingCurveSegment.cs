@@ -1,5 +1,6 @@
 ﻿using Oblikovati.Contracts.Application.TransientGeometry;
 using Oblikovati.Contracts.Enums;
+using Oblikovati.Contracts.NotClassified;
 
 namespace Oblikovati.Contracts.Application.Documents.DrawingDocument;
 

@@ -4,6 +4,7 @@ using Oblikovati.Contracts.Attributes;
 using Oblikovati.Contracts.ClientGraphics.DrawingView;
 using Oblikovati.Contracts.Enums;
 using Oblikovati.Contracts.Leaders;
+using Oblikovati.Contracts.NotClassified;
 
 namespace Oblikovati.Contracts.Application.UserInterfaceManager.BalloonTips;
 

@@ -1,6 +1,7 @@
 ﻿using Oblikovati.Contracts.Application.Documents.AssemblyDocument.AssemblyComponentDefinition;
 using Oblikovati.Contracts.Application.Documents.AssemblyDocument.AssemblyComponentDefinition.ComponentOccurence;
 using Oblikovati.Contracts.Attributes;
+using Oblikovati.Contracts.NotClassified;
 using Oblikovati.Contracts.Parameters;
 using Oblikovati.Contracts.Sketch2D.DimensionConstraints;
 

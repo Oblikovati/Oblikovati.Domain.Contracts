@@ -3,6 +3,7 @@ using Oblikovati.Contracts.Application.Documents.PartDocument.SheetMetalComponen
 using Oblikovati.Contracts.Application.TransientGeometry;
 using Oblikovati.Contracts.Attributes;
 using Oblikovati.Contracts.Enums;
+using Oblikovati.Contracts.NotClassified;
 using Oblikovati.Contracts.Parameters;
 
 namespace Oblikovati.Contracts.Application.Documents.DrawingDocument.Sheets.DrawingDimensions;

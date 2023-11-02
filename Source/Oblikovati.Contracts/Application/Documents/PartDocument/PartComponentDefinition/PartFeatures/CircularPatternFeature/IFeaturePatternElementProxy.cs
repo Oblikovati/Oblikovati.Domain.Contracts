@@ -3,6 +3,7 @@ using Oblikovati.Contracts.Application.Documents.PartDocument.PartComponentDefin
 using Oblikovati.Contracts.Application.TransientObjects.Math;
 using Oblikovati.Contracts.Application.TransientObjects.Utility;
 using Oblikovati.Contracts.Attributes;
+using Oblikovati.Contracts.NotClassified;
 
 namespace Oblikovati.Contracts.Application.Documents.PartDocument.PartComponentDefinition.PartFeatures.
     CircularPatternFeature;

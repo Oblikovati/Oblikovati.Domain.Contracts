@@ -3,6 +3,7 @@ using Oblikovati.Contracts.Application.Documents.PartDocument.PartComponentDefin
 using Oblikovati.Contracts.Application.TransientObjects.Utility;
 using Oblikovati.Contracts.Attributes;
 using Oblikovati.Contracts.Enums;
+using Oblikovati.Contracts.NotClassified;
 using Oblikovati.Contracts.Sketch3D.DimensionContraints3D;
 using Oblikovati.Contracts.Sketch3D.GeometricConstraints3D;
 using Oblikovati.Contracts.Sketch3D.HelicalCurves;

@@ -1,6 +1,7 @@
 ﻿using Oblikovati.Contracts.Application.Documents.PartDocument.PartComponentDefinition;
 using Oblikovati.Contracts.Application.TransientGeometry;
 using Oblikovati.Contracts.Enums;
+using Oblikovati.Contracts.NotClassified;
 
 namespace Oblikovati.Contracts.ModelAnnotations;
 

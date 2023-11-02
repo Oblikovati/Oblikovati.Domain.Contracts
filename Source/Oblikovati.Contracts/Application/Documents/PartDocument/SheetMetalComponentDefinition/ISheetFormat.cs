@@ -3,6 +3,7 @@ using Oblikovati.Contracts.Application.TransientObjects.Utility;
 using Oblikovati.Contracts.Attributes;
 using Oblikovati.Contracts.DWG;
 using Oblikovati.Contracts.Enums;
+using Oblikovati.Contracts.NotClassified;
 
 namespace Oblikovati.Contracts.Application.Documents.PartDocument.SheetMetalComponentDefinition;
 

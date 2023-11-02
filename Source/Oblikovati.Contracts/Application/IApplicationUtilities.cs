@@ -1,5 +1,6 @@
 ﻿using Oblikovati.Contracts.Application.TransientObjects.Math;
 using Oblikovati.Contracts.Application.TransientObjects.Utility;
+using Oblikovati.Contracts.NotClassified;
 
 namespace Oblikovati.Contracts.Application;
 

@@ -1,6 +1,7 @@
 ﻿using Oblikovati.Contracts.Application.TransientObjects.Math;
 using Oblikovati.Contracts.Attributes;
 using Oblikovati.Contracts.Enums;
+using Oblikovati.Contracts.NotClassified;
 using Oblikovati.Contracts.Sketch3D.GeometricConstraints3D;
 
 namespace Oblikovati.Contracts.Sketch3D.HelicalCurves;

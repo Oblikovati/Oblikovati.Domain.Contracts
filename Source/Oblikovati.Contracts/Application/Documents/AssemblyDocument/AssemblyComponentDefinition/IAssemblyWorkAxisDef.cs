@@ -1,6 +1,7 @@
 ﻿using Oblikovati.Contracts.Application.Documents.AssemblyDocument.AssemblyComponentDefinition.AssemblyConstraints;
 using Oblikovati.Contracts.Application.TransientGeometry;
 using Oblikovati.Contracts.Application.TransientObjects.Math;
+using Oblikovati.Contracts.NotClassified;
 
 namespace Oblikovati.Contracts.Application.Documents.AssemblyDocument.AssemblyComponentDefinition;
 

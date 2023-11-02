@@ -1,4 +1,6 @@
-﻿namespace Oblikovati.Contracts.Sketch3D;
+﻿using Oblikovati.Contracts.NotClassified;
+
+namespace Oblikovati.Contracts.Sketch3D;
 
 public interface ISilhouetteCurves : IList<ISilhouetteCurves>
 {

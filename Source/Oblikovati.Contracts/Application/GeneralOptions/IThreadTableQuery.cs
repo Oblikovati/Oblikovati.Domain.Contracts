@@ -1,4 +1,6 @@
-﻿namespace Oblikovati.Contracts.Application.GeneralOptions;
+﻿using Oblikovati.Contracts.NotClassified;
+
+namespace Oblikovati.Contracts.Application.GeneralOptions;
 
 public interface IThreadTableQuery
 {

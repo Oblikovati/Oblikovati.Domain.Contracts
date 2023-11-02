@@ -1,4 +1,6 @@
-﻿namespace Oblikovati.Contracts.Application.Documents.PartDocument.PartComponentDefinition.PartFeatures.
+﻿using Oblikovati.Contracts.NotClassified;
+
+namespace Oblikovati.Contracts.Application.Documents.PartDocument.PartComponentDefinition.PartFeatures.
     NonParametricBaseFeature;
 
 public interface INonParametricBaseFeatures : IList<INonParametricBaseFeatures>

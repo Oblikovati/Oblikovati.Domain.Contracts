@@ -1,5 +1,6 @@
 ﻿using Oblikovati.Contracts.Application.Documents.AssemblyDocument.AssemblyComponentDefinition.ComponentOccurence;
 using Oblikovati.Contracts.Application.TransientGeometry;
+using Oblikovati.Contracts.NotClassified;
 
 namespace Oblikovati.Contracts.DWG;
 

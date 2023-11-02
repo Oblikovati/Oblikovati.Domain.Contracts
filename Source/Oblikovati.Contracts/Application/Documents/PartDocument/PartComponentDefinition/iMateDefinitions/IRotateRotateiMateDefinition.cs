@@ -1,4 +1,5 @@
 ﻿using Oblikovati.Contracts.Attributes;
+using Oblikovati.Contracts.NotClassified;
 using Oblikovati.Contracts.Parameters;
 
 namespace Oblikovati.Contracts.Application.Documents.PartDocument.PartComponentDefinition.iMateDefinitions;

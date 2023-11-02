@@ -1,5 +1,6 @@
 ﻿using Oblikovati.Contracts.Application.Documents.DrawingDocument;
 using Oblikovati.Contracts.Application.TransientObjects.Utility;
+using Oblikovati.Contracts.NotClassified;
 using Oblikovati.Contracts.Sketch2D.Profiles;
 
 namespace Oblikovati.Contracts.Sketch2D;

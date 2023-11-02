@@ -3,6 +3,7 @@ using Oblikovati.Contracts.Application.DesignProjectManager;
 using Oblikovati.Contracts.Application.DisplayOptions;
 using Oblikovati.Contracts.Application.FileManager;
 using Oblikovati.Contracts.Application.HelpManager;
+using Oblikovati.Contracts.NotClassified;
 
 namespace Oblikovati.Contracts.Application;
 

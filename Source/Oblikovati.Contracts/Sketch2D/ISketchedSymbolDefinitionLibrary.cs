@@ -1,4 +1,6 @@
-﻿namespace Oblikovati.Contracts.Sketch2D;
+﻿using Oblikovati.Contracts.NotClassified;
+
+namespace Oblikovati.Contracts.Sketch2D;
 
 public interface ISketchedSymbolDefinitionLibrary
 {

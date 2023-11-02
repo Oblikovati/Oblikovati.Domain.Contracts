@@ -1,4 +1,6 @@
-﻿namespace Oblikovati.Contracts.Application.TransientBRep;
+﻿using Oblikovati.Contracts.NotClassified;
+
+namespace Oblikovati.Contracts.Application.TransientBRep;
 
 public interface IEdgeUseDefinition
 {

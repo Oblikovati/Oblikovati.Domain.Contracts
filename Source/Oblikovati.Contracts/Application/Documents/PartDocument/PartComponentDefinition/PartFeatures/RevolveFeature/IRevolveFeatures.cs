@@ -1,4 +1,5 @@
 ﻿using Oblikovati.Contracts.Enums;
+using Oblikovati.Contracts.NotClassified;
 using Oblikovati.Contracts.Sketch2D;
 using Oblikovati.Contracts.Sketch2D.Profiles;
 

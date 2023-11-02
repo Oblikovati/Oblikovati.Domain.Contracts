@@ -1,6 +1,6 @@
 ﻿namespace Oblikovati.Contracts.Application.TransientObjects.Math;
 
-public interface IVector
+public interface IVector_Old
 {
     double X { get; set; }
     double Y { get; set; }

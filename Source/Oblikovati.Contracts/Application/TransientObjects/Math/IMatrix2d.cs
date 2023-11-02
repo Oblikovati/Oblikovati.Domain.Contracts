@@ -2,7 +2,7 @@
 
 namespace Oblikovati.Contracts.Application.TransientObjects.Math;
 
-public interface IMatrix2d
+public interface IMatrix2d_Old
 {
     double Cell { get; set; }
     double Determinant { get; }

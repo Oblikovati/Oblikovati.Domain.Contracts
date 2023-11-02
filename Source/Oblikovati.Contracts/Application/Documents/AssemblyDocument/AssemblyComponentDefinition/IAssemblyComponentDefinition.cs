@@ -14,6 +14,7 @@ using Oblikovati.Contracts.ClientGraphics;
 using Oblikovati.Contracts.ClientGraphics.ComponentDefinition;
 using Oblikovati.Contracts.Enums;
 using Oblikovati.Contracts.ModelAnnotations;
+using Oblikovati.Contracts.NotClassified;
 using Oblikovati.Contracts.Parameters;
 using Oblikovati.Contracts.PointClouds;
 using Oblikovati.Contracts.Sketch2D;

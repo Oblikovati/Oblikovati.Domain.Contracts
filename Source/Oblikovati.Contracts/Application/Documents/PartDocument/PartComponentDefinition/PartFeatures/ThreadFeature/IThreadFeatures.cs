@@ -1,4 +1,6 @@
-﻿namespace Oblikovati.Contracts.Application.Documents.PartDocument.PartComponentDefinition.PartFeatures.ThreadFeature;
+﻿using Oblikovati.Contracts.NotClassified;
+
+namespace Oblikovati.Contracts.Application.Documents.PartDocument.PartComponentDefinition.PartFeatures.ThreadFeature;
 
 public interface IThreadFeatures : IList<IThreadFeatures>
 {

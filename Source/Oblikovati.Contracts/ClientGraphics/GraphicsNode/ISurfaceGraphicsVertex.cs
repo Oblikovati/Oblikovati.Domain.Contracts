@@ -1,4 +1,6 @@
-﻿namespace Oblikovati.Contracts.ClientGraphics.GraphicsNode;
+﻿using Oblikovati.Contracts.NotClassified;
+
+namespace Oblikovati.Contracts.ClientGraphics.GraphicsNode;
 
 public interface ISurfaceGraphicsVertex
 {

@@ -51,6 +51,7 @@ using Oblikovati.Contracts.Application.Documents.PartDocument.PartComponentDefin
 using Oblikovati.Contracts.Application.Documents.PartDocument.SheetMetalComponentDefinition.SheetMetalFeatures.
     BendFeature;
 using Oblikovati.Contracts.Application.TransientObjects.Utility;
+using Oblikovati.Contracts.NotClassified;
 using Oblikovati.Contracts.Sketch2D;
 
 namespace Oblikovati.Contracts.Application.Documents.PartDocument.PartComponentDefinition.PartFeatures.PartFeature;

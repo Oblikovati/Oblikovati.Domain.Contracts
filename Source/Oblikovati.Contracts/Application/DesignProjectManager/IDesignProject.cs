@@ -1,5 +1,6 @@
 ﻿using Oblikovati.Contracts.Application.ContentCenter;
 using Oblikovati.Contracts.Enums;
+using Oblikovati.Contracts.NotClassified;
 
 namespace Oblikovati.Contracts.Application.DesignProjectManager;
 

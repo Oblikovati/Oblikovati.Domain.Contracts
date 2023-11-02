@@ -13,6 +13,7 @@ using Oblikovati.Contracts.Attributes;
 using Oblikovati.Contracts.ClientGraphics;
 using Oblikovati.Contracts.Enums;
 using Oblikovati.Contracts.GraphicsDataSets;
+using Oblikovati.Contracts.NotClassified;
 using Oblikovati.Contracts.Unsorted;
 
 namespace Oblikovati.Contracts.Application.Documents.PresentationDocument;

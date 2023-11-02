@@ -10,6 +10,7 @@ using Oblikovati.Contracts.Application.TransientObjects.Utility;
 using Oblikovati.Contracts.Attributes;
 using Oblikovati.Contracts.ClientGraphics.ComponentDefinition;
 using Oblikovati.Contracts.Enums;
+using Oblikovati.Contracts.NotClassified;
 
 namespace Oblikovati.Contracts.Application.Documents.AssemblyDocument.AssemblyComponentDefinition.ComponentOccurence;
 

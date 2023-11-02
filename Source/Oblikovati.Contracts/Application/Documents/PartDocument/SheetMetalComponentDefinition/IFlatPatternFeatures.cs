@@ -22,6 +22,7 @@ using Oblikovati.Contracts.Application.Documents.PartDocument.SheetMetalComponen
     CutFeature;
 using Oblikovati.Contracts.Application.Documents.PartDocument.SheetMetalComponentDefinition.SheetMetalFeatures.
     PunchToolFeature;
+using Oblikovati.Contracts.NotClassified;
 using Oblikovati.Contracts.Sketch2D;
 
 namespace Oblikovati.Contracts.Application.Documents.PartDocument.SheetMetalComponentDefinition;

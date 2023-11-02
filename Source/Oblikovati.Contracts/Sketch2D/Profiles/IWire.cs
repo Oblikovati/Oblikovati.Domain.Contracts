@@ -1,5 +1,6 @@
 ﻿using Oblikovati.Contracts.Application.TransientObjects.Math;
 using Oblikovati.Contracts.Enums;
+using Oblikovati.Contracts.NotClassified;
 
 namespace Oblikovati.Contracts.Sketch2D.Profiles;
 

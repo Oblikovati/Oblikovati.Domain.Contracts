@@ -1,0 +1,13 @@
+﻿namespace Oblikovati.Contracts.NotClassified;
+
+public interface IHoleTableRow : IList<IHoleTableRow>
+{
+    IHoleTable Parent { get; }
+    IHoleTableCell Item { get; }
+
+    double Height { get; set; }
+    IHoleTag HoleTag { get; }
+    object ReferencedHole { get; }
+
+    void Delete();
+}

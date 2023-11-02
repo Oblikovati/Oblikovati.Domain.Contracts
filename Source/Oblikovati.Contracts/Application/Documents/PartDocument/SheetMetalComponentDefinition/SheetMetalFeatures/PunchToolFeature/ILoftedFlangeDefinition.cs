@@ -4,6 +4,7 @@ using Oblikovati.Contracts.Application.Documents.PartDocument.SheetMetalComponen
     UnfoldFeature;
 using Oblikovati.Contracts.Application.TransientObjects.Utility;
 using Oblikovati.Contracts.Enums;
+using Oblikovati.Contracts.NotClassified;
 using Oblikovati.Contracts.Parameters;
 
 namespace Oblikovati.Contracts.Application.Documents.PartDocument.SheetMetalComponentDefinition.SheetMetalFeatures.

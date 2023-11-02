@@ -1,4 +1,6 @@
-﻿namespace Oblikovati.Contracts.DynamicSimulation;
+﻿using Oblikovati.Contracts.NotClassified;
+
+namespace Oblikovati.Contracts.DynamicSimulation;
 
 public interface IDynamicSimulation
 {

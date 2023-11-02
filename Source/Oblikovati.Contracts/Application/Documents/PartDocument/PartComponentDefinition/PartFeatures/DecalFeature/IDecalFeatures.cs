@@ -1,4 +1,5 @@
-﻿using Oblikovati.Contracts.Sketch2D;
+﻿using Oblikovati.Contracts.NotClassified;
+using Oblikovati.Contracts.Sketch2D;
 
 namespace Oblikovati.Contracts.Application.Documents.PartDocument.PartComponentDefinition.PartFeatures.DecalFeature;
 

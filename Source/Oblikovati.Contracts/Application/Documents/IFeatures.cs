@@ -16,6 +16,7 @@ using Oblikovati.Contracts.Application.Documents.PartDocument.PartComponentDefin
 using Oblikovati.Contracts.Application.Documents.PartDocument.PartComponentDefinition.PartFeatures.SweepFeature;
 using Oblikovati.Contracts.Application.Documents.PartDocument.PartComponentDefinition.PartFeatures.ThreadFeature;
 using Oblikovati.Contracts.Application.TransientObjects.Utility;
+using Oblikovati.Contracts.NotClassified;
 using Oblikovati.Contracts.Sketch2D;
 
 namespace Oblikovati.Contracts.Application.Documents;

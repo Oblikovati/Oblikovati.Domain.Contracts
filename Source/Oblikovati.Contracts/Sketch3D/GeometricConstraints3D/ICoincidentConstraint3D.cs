@@ -1,4 +1,5 @@
 ﻿using Oblikovati.Contracts.Attributes;
+using Oblikovati.Contracts.NotClassified;
 
 namespace Oblikovati.Contracts.Sketch3D.GeometricConstraints3D;
 
