@@ -2,7 +2,7 @@
 
 namespace Oblikovati.Contracts.Attributes;
 
-public interface IAttributeSets : IList<IAttributeSets>
+public interface IAttributeSets : IList<IAttributeSet>
 {
     IAttributeSet Item { get; }
     bool NameIsUsed { get; }

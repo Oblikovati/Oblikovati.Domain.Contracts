@@ -1,8 +1,7 @@
-﻿namespace Oblikovati.Contracts.Application.Documents.PartDocument.PartComponentDefinition;
+﻿
+namespace Oblikovati.Contracts.Application.Documents.PartDocument.PartComponentDefinition;
 
-public interface IMaterials : IList<IMaterials>
+public interface IMaterials : IList<IMaterial>
 {
-    IMaterial Item { get; }
-
     IMaterial Add(string Name, double Density);
 }

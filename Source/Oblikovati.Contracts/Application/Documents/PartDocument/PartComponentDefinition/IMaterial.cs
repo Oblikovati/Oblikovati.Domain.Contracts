@@ -1,5 +1,4 @@
 ﻿using Oblikovati.Contracts.Application.Documents.DrawingDocument.DrawingStylesManager;
-using Oblikovati.Contracts.Attributes;
 using Oblikovati.Contracts.Enums;
 
 namespace Oblikovati.Contracts.Application.Documents.PartDocument.PartComponentDefinition;
@@ -16,17 +15,11 @@ public interface IMaterial
     double SpecificHeat { get; set; }
     IRenderStyle RenderStyle { get; set; }
     string Name { get; set; }
-    IAttributeSets AttributeSets { get; }
+    string Description { get; set; }
     StyleLocationEnum StyleLocation { get; }
     string InternalName { get; }
     bool UpToDate { get; }
     bool InUse { get; }
-    string ExternalMaterialId { get; set; }
-    bool _IsIsotropicMaterial { get; }
-    IMaterial Copy(string NewName);
-    void Delete();
-    void GetReferenceKey(ref List<byte> ReferenceKey, int KeyContext);
-    IMaterial ConvertToLocal();
-    void SaveToGlobal();
-    void UpdateFromGlobal();
+    bool IsIsotropicMaterial { get; }
+    
 }
