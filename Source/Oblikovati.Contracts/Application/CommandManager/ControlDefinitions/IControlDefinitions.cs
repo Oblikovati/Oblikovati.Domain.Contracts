@@ -2,7 +2,7 @@
 
 namespace Oblikovati.Contracts.Application.CommandManager.ControlDefinitions;
 
-public interface IControlDefinitions : IDictionary<string, IControlDefinition>
+public interface IControlDefinitions : IDictionary<string, IControlDefinition>, IInjectableSingletonEntity
 {
     bool UseDefaultMultiCharAliases { get; set; }
 

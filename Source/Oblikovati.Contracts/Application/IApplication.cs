@@ -80,8 +80,6 @@ public interface IApplication : IApplicationBase, IInjectableSingletonEntity
     string ADPSessionId { get; }
     string ADPDeviceId { get; }
     ICommandManager CommandManager { get; }
-    bool MRUEnabled { get; set; }
-    bool MRUDisplay { get; set; }
     bool SilentOperation { get; set; }
     object ActiveEditObject { get; }
     string StatusBarText { get; set; }

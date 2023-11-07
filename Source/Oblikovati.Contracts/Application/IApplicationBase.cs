@@ -9,6 +9,7 @@ namespace Oblikovati.Contracts.Application;
 
 public interface IApplicationBase
 {
+    IOblikovatiVersion Version { get; }
     IApplicationLog Log { get; }
     public IFileLocations FileLocations { get; }
     public IApplicationAddIns ApplicationAddIns { get; }
@@ -26,7 +27,6 @@ public interface IApplicationBase
     public string AllUsersAppDataPath { get; }
     public ITransientObjects TransientObjects { get; }
     public IFileAccessEvents FileAccessEvents { get; }
-    public IReferenceKeyEvents ReferenceKeyEvents { get; }
     public ITestManager TestManager { get; }
     public IHelpManager HelpManager { get; }
     IDependencyResolver GetDependencyResolver();

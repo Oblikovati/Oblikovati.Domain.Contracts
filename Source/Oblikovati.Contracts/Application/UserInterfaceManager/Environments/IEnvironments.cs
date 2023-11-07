@@ -6,11 +6,6 @@
 public interface IEnvironments : IList<IEnvironment>, IInjectableSingletonEntity
 {
     /// <summary>
-    /// Returns the specified Environment object from the list.
-    /// </summary>
-    /// <param name="index"></param>
-    public IEnvironment this[string index] { get; }
-    /// <summary>
     /// Method that creates a new Environment object.
     /// </summary>
     /// <param name="DisplayName"></param>
